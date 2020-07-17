@@ -5,5 +5,5 @@ public static class Application
         Container = new Container();
     }
 
-    public static Container Container { get; set; }
+    public static Container Container { get; }
 }
