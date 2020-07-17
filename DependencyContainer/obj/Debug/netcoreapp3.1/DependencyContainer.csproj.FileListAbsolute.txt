@@ -1,0 +1,11 @@
+C:\Users\nicor\source\repos\DependencyContainer\DependencyContainer\bin\Debug\netcoreapp3.1\DependencyContainer.exe
+C:\Users\nicor\source\repos\DependencyContainer\DependencyContainer\bin\Debug\netcoreapp3.1\DependencyContainer.deps.json
+C:\Users\nicor\source\repos\DependencyContainer\DependencyContainer\bin\Debug\netcoreapp3.1\DependencyContainer.runtimeconfig.json
+C:\Users\nicor\source\repos\DependencyContainer\DependencyContainer\bin\Debug\netcoreapp3.1\DependencyContainer.runtimeconfig.dev.json
+C:\Users\nicor\source\repos\DependencyContainer\DependencyContainer\bin\Debug\netcoreapp3.1\DependencyContainer.dll
+C:\Users\nicor\source\repos\DependencyContainer\DependencyContainer\bin\Debug\netcoreapp3.1\DependencyContainer.pdb
+C:\Users\nicor\source\repos\DependencyContainer\DependencyContainer\obj\Debug\netcoreapp3.1\DependencyContainer.csprojAssemblyReference.cache
+C:\Users\nicor\source\repos\DependencyContainer\DependencyContainer\obj\Debug\netcoreapp3.1\DependencyContainer.AssemblyInfoInputs.cache
+C:\Users\nicor\source\repos\DependencyContainer\DependencyContainer\obj\Debug\netcoreapp3.1\DependencyContainer.AssemblyInfo.cs
+C:\Users\nicor\source\repos\DependencyContainer\DependencyContainer\obj\Debug\netcoreapp3.1\DependencyContainer.dll
+C:\Users\nicor\source\repos\DependencyContainer\DependencyContainer\obj\Debug\netcoreapp3.1\DependencyContainer.pdb
