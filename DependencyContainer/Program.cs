@@ -14,13 +14,13 @@ namespace DependencyContainer
             var pushNotifications = Application.Container.Resolve<ISendPushNotifications>();
             pushNotifications.Send("This is a working");
 
-            var calculator = new Calculator();
+            var resolveFirst = Application.Container.Resolve<SingletonExample>();
+            resolveFirst.Add(100);
+            resolveFirst.Print();
 
-            calculator.Add(5)
-                      .Add(15)
-                      .Add(30)
-                      .Subtract(5)
-                      .Print();
+            var resolveSecond = Application.Container.Resolve<SingletonExample>();
+            resolveSecond.Add(100);
+            resolveSecond.Print();
 
             Console.ReadLine();
         }
@@ -29,6 +29,7 @@ namespace DependencyContainer
         {
             container.Register<Logger>()
                      .Register<AnotherLogger>()
+                     .Register<SingletonExample>()
                      .Register<ISendPushNotifications, OnesignalPushNotificationService>();
         }
     }
