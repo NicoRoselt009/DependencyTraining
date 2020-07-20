@@ -29,7 +29,7 @@ namespace DependencyContainer
         {
             container.Register<Logger>()
                      .Register<AnotherLogger>()
-                     .Register<SingletonExample>()
+                     .Register<SingletonExample>(LifetimeScope.InstancePerLifetimeScope)
                      .Register<ISendPushNotifications, OnesignalPushNotificationService>();
         }
     }
