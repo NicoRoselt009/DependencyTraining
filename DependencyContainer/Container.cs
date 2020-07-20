@@ -4,27 +4,38 @@ using System.Linq;
 
 public class Container
 {
-    private static List<Type> listOfTypes;
+    private static List<Dependency> listOfTypes;
 
     static Container()
     {
-        listOfTypes = new List<Type>();
+        listOfTypes = new List<Dependency>();
     }
 
     public Container Register<T>() where T : class
     {
-        listOfTypes.Add(typeof(T));
+        var dependency = new Dependency();
+        dependency.Register<T>();
+        listOfTypes.Add(dependency);
+
+        return this;
+    }
+
+    public Container Register<TInterface, TClass>() where TClass : class
+    {
+        var dependency = new Dependency();
+        dependency.Register<TInterface, TClass>();
+        listOfTypes.Add(dependency);
 
         return this;
     }
 
     public T Resolve<T>() where T : class
     {
-        var resultType = listOfTypes.SingleOrDefault(x => x == typeof(T));
+        var resultType = listOfTypes.SingleOrDefault(x => x.Resolve<T>());
 
         if (resultType == null)
             throw new NotImplementedException("Type has not been implemented");
 
-        return (T)Activator.CreateInstance(resultType);
+        return (T)Activator.CreateInstance(resultType.ConcreteType);
     }
 }
