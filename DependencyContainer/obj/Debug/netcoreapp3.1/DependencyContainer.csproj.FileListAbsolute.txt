@@ -22,3 +22,6 @@ D:\projects\DependencyTraining\DependencyContainer\obj\Debug\netcoreapp3.1\Depen
 D:\projects\DependencyTraining\DependencyContainer\obj\Debug\netcoreapp3.1\DependencyContainer.dll
 D:\projects\DependencyTraining\DependencyContainer\obj\Debug\netcoreapp3.1\DependencyContainer.pdb
 D:\projects\DependencyTraining\DependencyContainer\obj\Debug\netcoreapp3.1\DependencyContainer.genruntimeconfig.cache
+D:\projects\DependencyTraining\DependencyContainer\bin\Debug\netcoreapp3.1\Satellite.dll
+D:\projects\DependencyTraining\DependencyContainer\bin\Debug\netcoreapp3.1\Satellite.pdb
+D:\projects\DependencyTraining\DependencyContainer\obj\Debug\netcoreapp3.1\DependencyContainer.csproj.CopyComplete

@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v3.1": {
       "DependencyContainer/1.0.0": {
+        "dependencies": {
+          "Satellite": "1.0.0"
+        },
         "runtime": {
           "DependencyContainer.dll": {}
+        }
+      },
+      "Satellite/1.0.0": {
+        "runtime": {
+          "Satellite.dll": {}
         }
       }
     }
   },
   "libraries": {
     "DependencyContainer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Satellite/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
