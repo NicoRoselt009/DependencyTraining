@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\projects\\DependencyTraining\\DependencyContainer\\DependencyContainer.csproj": {}
+    "C:\\projects\\DependencyTraining\\DependencyContainer\\DependencyContainer.csproj": {}
   },
   "projects": {
-    "D:\\projects\\DependencyTraining\\DependencyContainer\\DependencyContainer.csproj": {
+    "C:\\projects\\DependencyTraining\\DependencyContainer\\DependencyContainer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\DependencyTraining\\DependencyContainer\\DependencyContainer.csproj",
+        "projectUniqueName": "C:\\projects\\DependencyTraining\\DependencyContainer\\DependencyContainer.csproj",
         "projectName": "DependencyContainer",
-        "projectPath": "D:\\projects\\DependencyTraining\\DependencyContainer\\DependencyContainer.csproj",
-        "packagesPath": "C:\\Users\\juanl\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\DependencyTraining\\DependencyContainer\\obj\\",
+        "projectPath": "C:\\projects\\DependencyTraining\\DependencyContainer\\DependencyContainer.csproj",
+        "packagesPath": "C:\\Users\\cna\\.nuget\\packages\\",
+        "outputPath": "C:\\projects\\DependencyTraining\\DependencyContainer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\juanl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cna\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\projects\\DependencyTraining\\satellite\\Satellite.csproj": {
-                "projectPath": "D:\\projects\\DependencyTraining\\satellite\\Satellite.csproj"
+              "C:\\projects\\DependencyTraining\\satellite\\Satellite.csproj": {
+                "projectPath": "C:\\projects\\DependencyTraining\\satellite\\Satellite.csproj"
               }
             }
           }
@@ -65,21 +65,21 @@
         }
       }
     },
-    "D:\\projects\\DependencyTraining\\satellite\\Satellite.csproj": {
+    "C:\\projects\\DependencyTraining\\satellite\\Satellite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\DependencyTraining\\satellite\\Satellite.csproj",
+        "projectUniqueName": "C:\\projects\\DependencyTraining\\satellite\\Satellite.csproj",
         "projectName": "Satellite",
-        "projectPath": "D:\\projects\\DependencyTraining\\satellite\\Satellite.csproj",
-        "packagesPath": "C:\\Users\\juanl\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\DependencyTraining\\satellite\\obj\\",
+        "projectPath": "C:\\projects\\DependencyTraining\\satellite\\Satellite.csproj",
+        "packagesPath": "C:\\Users\\cna\\.nuget\\packages\\",
+        "outputPath": "C:\\projects\\DependencyTraining\\satellite\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\juanl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cna\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

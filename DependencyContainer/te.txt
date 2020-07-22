@@ -1,0 +1,23 @@
+Calculator
+
+ 
+
+Command pattern
+
+ 
+
+Add
+Multiply 
+Subtract
+Divide
+
+ 
+
+Undo
+
+ 
+
+
+Contract
+    Execute
+    Undo

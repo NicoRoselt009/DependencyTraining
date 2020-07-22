@@ -8,20 +8,22 @@ namespace DependencyContainer
         {
             RegisterDependencies(Application.Container);
 
-            var logger = Application.Container.Resolve<Logger>();
-            logger.LogStart();
-
-            var pushNotifications = Application.Container.Resolve<ISendPushNotifications>();
-            pushNotifications.Send("This is a working");
-
             var calculator = new Calculator();
 
-            calculator.Add(5)
-                      .Add(15)
-                      .Add(30)
-                      .Subtract(5)
-                      .Print();
+            var command = new AddCommand(calculator, 20);
 
+            // var logger = Application.Container.Resolve<Logger>();
+            // logger.LogStart();
+
+            // var pushNotifications = Application.Container.Resolve<ISendPushNotifications>();
+            // pushNotifications.Send("This is a working");
+
+            command.Exucute();
+
+            calculator.Print();
+
+            command.Undo();
+            calculator.Print();
             Console.ReadLine();
         }
 
