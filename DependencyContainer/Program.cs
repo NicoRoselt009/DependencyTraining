@@ -1,37 +1,46 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace DependencyContainer
 {
     class Program
     {
+        private static Dictionary<Type, dynamic> commandRegistrar;
+
         static void Main(string[] args)
         {
             RegisterDependencies(Application.Container);
+            var calculatorService = Application.Container.Resolve<CalculatorService>();
 
-            var calculator = new Calculator();
+            RegisterCommands(calculatorService);
 
-            var command = new AddCommand(calculator, 20);
+            Execute<AddCommand>(new AddCommand(20));
+            Execute<SubtractCommand>(new SubtractCommand(20));
 
-            // var logger = Application.Container.Resolve<Logger>();
-            // logger.LogStart();
-
-            // var pushNotifications = Application.Container.Resolve<ISendPushNotifications>();
-            // pushNotifications.Send("This is a working");
-
-            command.Exucute();
-
-            calculator.Print();
-
-            command.Undo();
-            calculator.Print();
             Console.ReadLine();
+        }
+
+        private static void RegisterCommands(CalculatorService calculatorService)
+        {
+            commandRegistrar = new Dictionary<Type, dynamic>();
+            commandRegistrar.Add(typeof(AddCommand), calculatorService);
+            commandRegistrar.Add(typeof(SubtractCommand), calculatorService);
+        }
+
+        private static void Execute<T>(ICommand command)
+        {
+            var dispatcher = commandRegistrar.Single(x => x.Key == command.GetType());
+
+            dispatcher.Value.Execute((T)command);
         }
 
         private static void RegisterDependencies(Container container)
         {
             container.Register<Logger>()
                      .Register<AnotherLogger>()
-                     .Register<ISendPushNotifications, OnesignalPushNotificationService>();
+                     .Register<ISendPushNotifications, OnesignalPushNotificationService>()
+                     .Register<CalculatorService>();
         }
     }
 }

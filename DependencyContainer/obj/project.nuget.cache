@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6nqS0fiU45gz1BlYvBrN48e2aIh8HOBmgHsu6IbSneDM3MkoQH8R6pD5wyXFvV+yD3Dm+Xg6/r4WLtlATaCSpg==",
+  "dgSpecHash": "IZO13OolYJ45pxF3hzwEZgV48kT7aAzH8bzx80I7bBnfblh5nZVuo8KDgflIIWzY3CCJivP7H8U82P94NN9KYg==",
   "success": true,
-  "projectFilePath": "C:\\projects\\DependencyTraining\\DependencyContainer\\DependencyContainer.csproj",
+  "projectFilePath": "D:\\projects\\DependencyTraining\\DependencyContainer\\DependencyContainer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
