@@ -9,7 +9,7 @@ namespace DependencyContainer
 
         private readonly Calculator calculator;
 
-        public CalculatorService()
+        public CalculatorService(string test)
         {
             calculator = new Calculator();
         }

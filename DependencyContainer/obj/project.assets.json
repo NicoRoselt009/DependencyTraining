@@ -1,51 +1,32 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {
-      "Satellite/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "compile": {
-          "bin/placeholder/Satellite.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Satellite.dll": {}
-        }
-      }
-    }
+    ".NETCoreApp,Version=v3.1": {}
   },
-  "libraries": {
-    "Satellite/1.0.0": {
-      "type": "project",
-      "path": "../satellite/Satellite.csproj",
-      "msbuildProject": "../satellite/Satellite.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Satellite >= 1.0.0"
+      "C:\\Projects\\DependencyTraining\\satellite\\Satellite.csproj"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\juanl\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\nicor\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\projects\\DependencyTraining\\DependencyContainer\\DependencyContainer.csproj",
+      "projectUniqueName": "C:\\Projects\\DependencyTraining\\DependencyContainer\\DependencyContainer.csproj",
       "projectName": "DependencyContainer",
-      "projectPath": "D:\\projects\\DependencyTraining\\DependencyContainer\\DependencyContainer.csproj",
-      "packagesPath": "C:\\Users\\juanl\\.nuget\\packages\\",
-      "outputPath": "D:\\projects\\DependencyTraining\\DependencyContainer\\obj\\",
+      "projectPath": "C:\\Projects\\DependencyTraining\\DependencyContainer\\DependencyContainer.csproj",
+      "packagesPath": "C:\\Users\\nicor\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\DependencyTraining\\DependencyContainer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\juanl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nicor\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -59,8 +40,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\projects\\DependencyTraining\\satellite\\Satellite.csproj": {
-              "projectPath": "D:\\projects\\DependencyTraining\\satellite\\Satellite.csproj"
+            "C:\\Projects\\DependencyTraining\\satellite\\Satellite.csproj": {
+              "projectPath": "C:\\Projects\\DependencyTraining\\satellite\\Satellite.csproj"
             }
           }
         }
@@ -88,8 +69,19 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Unable to find project information for 'C:\\Projects\\DependencyTraining\\satellite\\Satellite.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so please run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
+      "libraryId": "C:\\Projects\\DependencyTraining\\satellite\\Satellite.csproj",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }
