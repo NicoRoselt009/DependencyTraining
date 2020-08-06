@@ -1,12 +1,29 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "Satellite/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Satellite.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Satellite.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Satellite/1.0.0": {
+      "type": "project",
+      "path": "../satellite/Satellite.csproj",
+      "msbuildProject": "../satellite/Satellite.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "C:\\Projects\\DependencyTraining\\satellite\\Satellite.csproj"
+      "Satellite >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -72,16 +89,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1105",
-      "level": "Error",
-      "message": "Unable to find project information for 'C:\\Projects\\DependencyTraining\\satellite\\Satellite.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so please run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
-      "libraryId": "C:\\Projects\\DependencyTraining\\satellite\\Satellite.csproj",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  }
 }
